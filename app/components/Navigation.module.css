@@ -1,0 +1,35 @@
+/* di app/components/Navigation.module.css */
+.nav {
+    /* Pusatkan navigasi secara vertikal di kolomnya */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav ul {
+    list-style: none;
+  }
+  
+  .nav li {
+    margin: 35px 0;
+  }
+  
+  .nav a {
+    color: #aaa;
+    display: flex;
+    flex-direction: column; /* Ikon di atas, teks di bawah */
+    align-items: center;
+    font-size: 0.75rem; /* Teks kecil */
+    font-weight: bold;
+    gap: 8px; /* Jarak antara ikon dan teks */
+    transition: color 0.3s;
+  }
+  
+  .nav a svg { /* Target Ikon */
+    font-size: 1.5rem; /* Ukuran ikon */
+  }
+  
+  .nav a:hover {
+    color: #fff;
+  }

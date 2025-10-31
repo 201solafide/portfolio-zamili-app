@@ -1,0 +1,283 @@
+/* di app/page.module.css */
+
+.section {
+    /* Memberi jarak antar bagian (About, Service, dll) */
+    margin-bottom: 70px; 
+}
+
+.title {
+    font-size: 2.5rem; /* 2.5x ukuran font normal */
+    margin-bottom: 20px;
+    color: #fff; /* Sedikit lebih putih dari teks biasa */
+}
+
+.aboutText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #ccc; /* Teks paragraf agak redup */
+}
+
+.aboutDetails {
+    display: flex; /* Membuat 2 kolom */
+    gap: 40px; /* Jarak antar 2 kolom <ul> */
+}
+
+.aboutDetails ul {
+    list-style: none; /* Hilangkan bullet points */
+    flex: 1; /* Bagi rata lebarnya (1 kolom 50%) */
+}
+
+.aboutDetails li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.aboutDetails li strong {
+    color: #eee; /* Label (Birthday, City) lebih terang */
+    margin-right: 10px;
+}
+
+/* ========== STYLE SERVICE ========== */
+.serviceGrid {
+    display: grid;
+    /* Buat 2 kolom dengan lebar yang sama */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; /* Jarak antar kartu */
+}
+
+.serviceCard {
+    background-color: #1a1a1a; /* Warna kotak sedikit beda */
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.serviceCard:hover {
+    background-color: #222;
+}
+
+.serviceCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    display: flex; /* Tambah */
+    align-items: center; /* Tambah */
+    gap: 10px; /* Tambah (jarak ikon & teks) */
+}
+
+.serviceCard p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* ========== STYLE RESUME ========== */
+.resumeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Jarak antar kolom Edukasi & Pengalaman */
+}
+
+.resumeTitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.resumeItem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    border-left: 3px solid #4e4e4e; /* Garis penanda di kiri */
+}
+
+.resumeItem h4 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.resumeItem span {
+    display: block;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.resumeItem p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* ========== STYLE PROJECT ========== */
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.projectCard {
+    position: relative; /* Penting untuk overlay */
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.projectCard img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.projectOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    padding: 40px 20px 20px 20px;
+    color: #fff;
+    opacity: 0; /* Sembunyikan */
+    transform: translateY(20px); /* Mulai dari bawah */
+    transition: all 0.4s ease;
+}
+
+.projectCard:hover .projectOverlay {
+    opacity: 1; /* Tampilkan saat hover */
+    transform: translateY(0);
+}
+
+.projectCard:hover img {
+    transform: scale(1.1); /* Efek zoom di gambar */
+}
+
+.projectOverlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.projectOverlay span {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* ========== STYLE BLOG ========== */
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blogCard {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden; /* Jika Anda pakai gambar */
+}
+
+.blogCard img { /* Aktifkan jika Anda pakai gambar */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogContent {
+    padding: 25px;
+}
+
+.blogContent span {
+    display: block;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.blogContent h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.blogContent h3:hover {
+    color: #ccc;
+}
+
+.blogContent p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.blogContent a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ========== STYLE CONTACT ========== */
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Info 1/3, Form 2/3 */
+    gap: 40px;
+}
+
+.contactInfo p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.infoItem { 
+    margin-bottom: 20px;
+}
+
+.infoItem strong {
+    display: flex; /* Tambah */
+    align-items: center; /* Tambah */
+    gap: 10px; /* Tambah */
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.infoItem span {
+    color: #ccc;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contactForm button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start; /* Tombol tidak full-width */
+    transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #ccc;
+}

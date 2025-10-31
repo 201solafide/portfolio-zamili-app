@@ -1,0 +1,36 @@
+/* di app/layout.module.css */
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* 1. KOLOM PROFIL (KIRI) */
+  .profileColumn {
+    width: 350px; /* Lebar tetap untuk profil */
+    height: 100vh; /* Tinggi penuh */
+    position: sticky; /* Tetap di tempat */
+    top: 0;
+    overflow-y: auto; /* Boleh scroll JIKA konten profil SANGAT panjang */
+    border-right: 1px solid #333;
+    background-color: #111; /* Pastikan ada bg */
+  }
+  
+  /* 2. KOLOM NAVIGASI (TENGAH) */
+  .navColumn {
+    width: 110px; /* Lebar tetap untuk navigasi ikon */
+    height: 100vh; /* Tinggi penuh */
+    position: sticky; /* Tetap di tempat */
+    top: 0;
+    border-right: 1px solid #333;
+    background-color: #111; /* Pastikan ada bg */
+    /* centering akan diurus oleh komponen Navigation.tsx */
+  }
+  
+  /* 3. KOLOM KONTEN (KANAN) */
+  .contentColumn {
+    flex: 1; /* Ambil sisa ruang */
+    padding: 40px;
+    /* Kolom ini akan otomatis scroll jika kontennya panjang (dari page.tsx) */
+  }
