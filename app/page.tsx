@@ -11,7 +11,6 @@ import {
 
 export default function Home() {
   return (
-    // Kita gunakan <article> atau <div> sebagai pembungkus utama
     <article>
       {/* ========== BAGIAN ABOUT ========== */}
       <section id="about" className={styles.section}>
@@ -33,7 +32,7 @@ export default function Home() {
           </ul>
           <ul>
             <li><strong>Degree:</strong> Honors</li>
-            <li><strong>Country:</strong> American</li>
+            <li><strong>Country:</strong> Indonesia</li>
             <li><strong>Interest:</strong> PS, Design</li>
             <li><strong>Lang:</strong> English, Hindi, Etc</li>
             <li><strong>Website:</strong> www.meweb.com</li>
@@ -187,11 +186,11 @@ export default function Home() {
             </div>
             <div className={styles.infoItem}>
               <strong><FaPhone /> Phone:</strong>
-              <span>+984 544 6984</span>
+              <span>+822 6002 5752</span>
             </div>
             <div className={styles.infoItem}>
               <strong><FaMapMarkerAlt /> Address:</strong>
-              <span>New York, USA</span>
+              <span>Tangerang, INA</span>
             </div>
           </div>
 
