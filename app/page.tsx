@@ -1,3 +1,4 @@
+import { FaDev, FaIcons, FaICursor } from 'react-icons/fa6';
 import styles from './page.module.css';
 import { 
   FaCode, 
@@ -6,7 +7,9 @@ import {
   FaMobileAlt,
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaItchIo,
+  FaCloudflare
 } from 'react-icons/fa';
 
 export default function Home() {
@@ -16,26 +19,25 @@ export default function Home() {
       <section id="about" className={styles.section}>
         <h2 className={styles.title}>ABOUT —</h2>
         <p className={styles.aboutText}>
-          I'm a web developer in New York. I spend my days with my hands in
-          different areas of development. incididunt ut labore et dolore
-          magna aliqua. Ut enim ad nim veniam, quis ostrud exercitation.
+          A fresh graduate in Informatics Engineering, 
+          passionate about Web development, IoT system and Deep Learning Enthusiast
         </p>
 
         {/* Wrapper untuk info detail (kita buat 2 kolom) */}
         <div className={styles.aboutDetails}>
           <ul>
-            <li><strong>Birthday:</strong> 01. March. 1990</li>
-            <li><strong>City:</strong> New York</li>
-            <li><strong>Study:</strong> NY University</li>
-            <li><strong>E-mail:</strong> mymail@gmail.com</li>
-            <li><strong>Phone:</strong> +984 544 6984</li>
+            <li><strong>Birthday:</strong> 30. May. 2005</li>
+            <li><strong>City:</strong> Jakarta</li>
+            <li><strong>Study:</strong> Sumatera Institute of Technology</li>
+            <li><strong>E-mail:</strong> solafidezamili1945@gmail.com</li>
+            <li><strong>Phone:</strong> +6282260025752</li>
           </ul>
           <ul>
             <li><strong>Degree:</strong> Honors</li>
             <li><strong>Country:</strong> Indonesia</li>
-            <li><strong>Interest:</strong> PS, Design</li>
-            <li><strong>Lang:</strong> English, Hindi, Etc</li>
-            <li><strong>Website:</strong> www.meweb.com</li>
+            <li><strong>Interest:</strong> Web & IoT Development, with Deep Learning Enthusiast</li>
+            <li><strong>Lang:</strong> English</li>
+            <li><strong>Website:</strong> portfolio-zamili-app.vercel.app</li>
           </ul>
         </div>
       </section>
@@ -50,22 +52,22 @@ export default function Home() {
 
           <div className={styles.serviceCard}>
             {/* Ganti [ICON] dengan komponen ikon nanti */}
-            <h3><FaCode /> DEVELOPER</h3> 
+            <h3><FaDev /> WEB DEVELOPER</h3> 
             <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
           </div>
 
           <div className={styles.serviceCard}>
-            <h3><FaCamera /> PHOTOGRAPHY</h3>
+            <h3><FaCloudflare /> IOT SYSTEM & CLOUD FIREBASE</h3>
             <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
           </div>
 
           <div className={styles.serviceCard}>
-            <h3><FaChartLine /> MARKETING</h3>
+            <h3><FaChartLine /> SYSTEM ENGINEERING</h3>
             <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
           </div>
 
           <div className={styles.serviceCard}>
-            <h3><FaMobileAlt /> RESPONSIVE</h3>
+            <h3><FaCode /> MACHINE LEARNING CNN</h3>
             <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
           </div>
 
@@ -81,13 +83,13 @@ export default function Home() {
           <div>
             <h3 className={styles.resumeTitle}>Education</h3>
             <div className={styles.resumeItem}>
-              <h4>Master Degree</h4>
-              <span>2015 - 2018 | NY University</span>
+              <h4>Bachelor Degree</h4>
+              <span>2021 - 2025 | Sumatera Institute of Technology</span>
               <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
             </div>
             <div className={styles.resumeItem}>
-              <h4>Bachelor Degree</h4>
-              <span>2012 - 2015 | LA University</span>
+              <h4>High School</h4>
+              <span>2018 - 2021 | SMA Negeri 1 Telukdalam</span>
               <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
             </div>
           </div>
@@ -96,13 +98,13 @@ export default function Home() {
           <div>
             <h3 className={styles.resumeTitle}>Experience</h3>
             <div className={styles.resumeItem}>
-              <h4>Web Developer</h4>
-              <span>2020 - Sekarang | Google Inc.</span>
+              <h4>System Engineering</h4>
+              <span>2025 - Sekarang | PT Abdi Jaya Integra</span>
               <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
             </div>
             <div className={styles.resumeItem}>
-              <h4>UI/UX Designer</h4>
-              <span>2018 - 2020 | Facebook</span>
+              <h4>IT Support</h4>
+              <span>July 2024 - August 2024 | PT PLN (Persero) UPP SUMBAGUT 3</span>
               <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
             </div>
           </div>
@@ -113,8 +115,7 @@ export default function Home() {
       <section id="project" className={styles.section}>
         <h2 className={styles.title}>PROJECT —</h2>
         
-        <div className={styles.projectGrid}>
-          {/* Ganti 'src' dengan path ke gambar Anda di folder /public */}
+          <div className={styles.projectGrid}>
           <div className={styles.projectCard}>
             <img src="/images/EmbungTera.jpg" alt="Project 1" />
             <div className={styles.projectOverlay}>
@@ -162,9 +163,10 @@ export default function Home() {
           <div className={styles.blogCard}>
             {/* <img src="/blog-image2.jpg" alt="Blog Post 2" /> */}
             <div className={styles.blogContent}>
-              <span>12 Oct, 2025 | Photography</span>
-              <h3>Top 10 Lenses for Beginners</h3>
+              <span>26 Nov, 2025 | Icons Style</span>
+              <h3>Most icons style with nodeJS</h3>
               <p>Lorem ipsum dolor sit amet, tur adipisicing elit tempor.</p>
+              <p>VISIT THE ICON <a href="https://fontawesome.com/icons/dev?s="><FaIcons/></a></p>
               <a href="#">Read More</a>
             </div>
           </div>
@@ -182,7 +184,7 @@ export default function Home() {
             
             <div className={styles.infoItem}>
               <strong><FaEnvelope /> E-mail:</strong>
-              <span>mymail@gmail.com</span>
+              <span>solafidezamili1945@gmail.com</span>
             </div>
             <div className={styles.infoItem}>
               <strong><FaPhone /> Phone:</strong>
