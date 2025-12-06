@@ -26,23 +26,17 @@ export default function Home() {
         {/* Wrapper untuk info detail (kita buat 2 kolom) */}
         <div className={styles.aboutDetails}>
           <ul>
-            {/* <li><strong>Birthday:</strong> 30. May. 2005</li> */}
-            {/* <li><strong>Study:</strong> Sumatera Institute of Technology</li> */}
             <li><strong>E-mail:</strong> solafidezamili1945@gmail.com</li>
             <li><strong>Phone:</strong> +6282260025752</li>
             <li><strong>Interest:</strong> Web & IoT Development, with Deep Learning Enthusiast</li>
           </ul>
           <ul>
-            {/* <li><strong>Degree:</strong> Honors</li> */}
             <li><strong>Regency:</strong> Tangerang, Banten</li>
             <li><strong>Country:</strong> Indonesia</li>
             <li><strong>Lang:</strong> English</li>
-            {/* <li><strong>Website:</strong> portfolio-zamili-app.vercel.app</li> */}
           </ul>
         </div>
       </section>
-
-      {/* Nanti kita tambahkan bagian "SERVICE" di sini */}
 
       <section id="service" className={styles.section}>
         <h2 className={styles.style}>SERVICE</h2>
