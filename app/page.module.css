@@ -1,4 +1,7 @@
 /* di app/page.module.css */
+body{
+    user-select: none;
+}
 
 .section {
     /* Memberi jarak antar bagian (About, Service, dll) */
@@ -190,6 +193,7 @@
 }
 
 .blogContent span {
+    /* display: flex; */
     display: block;
     font-size: 0.9rem;
     color: #aaa;
@@ -217,6 +221,13 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+.iconLink {
+    display: inline-flex !important;
+    margin-left: 6px;
+    align-items: center;
+}
+
 
 /* ========== STYLE CONTACT ========== */
 .contactGrid {
