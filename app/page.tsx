@@ -45,7 +45,6 @@ export default function Home() {
         <div className={styles.serviceGrid}>
 
           <div className={styles.serviceCard}>
-            {/* Ganti [ICON] dengan komponen ikon nanti */}
             <h3><FaDev /> WEB DEVELOPER</h3> 
             <p>Building responsive websites using React, Next.js.</p>
           </div>
