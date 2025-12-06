@@ -4,14 +4,13 @@ body{
 }
 
 .section {
-    /* Memberi jarak antar bagian (About, Service, dll) */
     margin-bottom: 70px; 
 }
 
 .title {
-    font-size: 2.5rem; /* 2.5x ukuran font normal */
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #fff; /* Sedikit lebih putih dari teks biasa */
+    color: #fff;
 }
 
 .aboutText {
